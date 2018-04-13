@@ -1,9 +1,5 @@
 import sys
 
-
-a = sys.argv
-
-
 class SetOps:
 
     def __init__(self, opts):
@@ -35,7 +31,6 @@ class SetOps:
         return delim
 
     def run(self):
-        print "run"
 
         a, acount = self.to_set(self.opts.file1, self.opts.f1)
         b, bcount = self.to_set(self.opts.file2, self.opts.f2)

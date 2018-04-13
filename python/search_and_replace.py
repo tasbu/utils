@@ -41,7 +41,7 @@ def clean_file( f ):
 
         nf.close()
 
-for root, dirs, files in os.walk("src/dagger", topdown=False):
+for root, dirs, files in os.walk(".", topdown=False):
     for name in files:
         if name[-3:] == '.py':
             clean_file( os.path.join( root, name) ) 
